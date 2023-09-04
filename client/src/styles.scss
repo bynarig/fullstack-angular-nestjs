@@ -2,3 +2,8 @@
 
 /* Importing Bootstrap SCSS file. */
 @import 'bootstrap/scss/bootstrap';
+
+body {
+    text-decoration: none;
+    background-color: rgba(41, 43, 46, 1);
+}

@@ -1,0 +1,50 @@
+//footer BG
+$footer-bg: rgba(19, 22, 32, 1);
+
+footer {
+    background-color: $footer-bg;
+}
+
+div {
+    color: white;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+
+}
+
+a {
+    all: unset;
+    cursor: pointer;
+    opacity: 0.75;
+    font-family: Nunito-Regular, serif;
+}
+
+p {
+    font-family: Nunito-Regular, serif;
+}
+
+@media lg {
+    div {
+        max-width: 70%;
+    }
+}
+
+/* For desktop screens */
+@media (min-width: 768px) {
+    .col-sm-6 {
+        flex-basis: 25%; /* Show 1 columns per row on tablets/PC */
+    }
+
+}
+
+
+/* For mobile screens */
+@media (max-width: 767px) {
+    .col-sm-6 {
+        flex-basis: 100%; /* Show 1 column per row on mobile */
+    }
+    p {
+        margin-top: 30px;
+    }
+}
