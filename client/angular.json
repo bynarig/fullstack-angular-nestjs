@@ -14,13 +14,14 @@
             "sourceRoot": "src",
             "prefix": "app",
             "i18n": {
-                "sourceLocale": "en-US",
+                "sourceLocale": {
+                    "code": "en",
+                    "baseHref": ""
+                },
                 "locales": {
                     "uk": {
-                        "translation": "src/locale/messages.uk.xlf"
-                    },
-                    "en": {
-                        "translation": "src/locale/messages.en.xlf"
+                        "translation": "src/locale/messages.uk.xlf",
+                        "baseHref": ""
                     }
                 }
             },
@@ -28,6 +29,8 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
+                        "localize": true,
+                        "i18nMissingTranslation": "error",
                         "outputPath": "dist/client",
                         "index": "src/index.html",
                         "main": "src/main.ts",
@@ -47,6 +50,11 @@
                         "scripts": []
                     },
                     "configurations": {
+                        "uk": {
+                            "localize": [
+                                "uk"
+                            ]
+                        },
                         "production": {
                             "budgets": [
                                 {
@@ -76,6 +84,9 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "configurations": {
+                        "uk": {
+                            "browserTarget": "client:build:development,uk"
+                        },
                         "production": {
                             "browserTarget": "client:build:production"
                         },
@@ -88,7 +99,9 @@
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "client:build"
+                        "browserTarget": "client:build",
+                        "format": "xlf",
+                        "outputPath": "src/locale"
                     }
                 },
                 "test": {
@@ -108,6 +121,13 @@
                             "src/styles.scss"
                         ],
                         "scripts": []
+                    }
+                },
+                "deploy": {
+                    "builder": "@angular/fire:deploy",
+                    "options": {
+                        "version": 2,
+                        "browserTarget": "client:build:production"
                     }
                 }
             }

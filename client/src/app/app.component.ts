@@ -7,5 +7,8 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
     title = "VisitEverywhere";
-
+    localesList = [
+        { code: "en-US", label: "English" },
+        { code: "uk", label: "Українська" }
+    ];
 }

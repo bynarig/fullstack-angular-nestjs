@@ -15,5 +15,12 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<ul>
+    <li *ngFor="let locale of localesList">
+        <a href="/{{locale.code}}/">
+            {{locale.label}}
+        </a>
+    </li>
+</ul>
 
 <router-outlet></router-outlet>
