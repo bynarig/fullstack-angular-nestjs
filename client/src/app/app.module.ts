@@ -4,16 +4,11 @@ import { BrowserModule } from "@angular/platform-browser";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-
-import { registerLocaleData } from "@angular/common";
-import localeEn from "@angular/common/locales/en";
-import localeUk from "@angular/common/locales/uk";
+import { HttpClientModule } from "@angular/common/http";
 
 // Import other necessary modules
 
 // Register locales
-registerLocaleData(localeEn);
-registerLocaleData(localeUk);
 
 @NgModule({
     declarations: [
@@ -22,7 +17,8 @@ registerLocaleData(localeUk);
     imports: [
         BrowserModule,
         AppRoutingModule,
-        NgbModule
+        NgbModule,
+        HttpClientModule
     ],
     providers: [],
     bootstrap: [AppComponent]

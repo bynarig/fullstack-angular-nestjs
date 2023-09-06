@@ -29,7 +29,6 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "localize": true,
                         "i18nMissingTranslation": "error",
                         "outputPath": "dist/client",
                         "index": "src/index.html",
@@ -40,14 +39,15 @@
                         "tsConfig": "tsconfig.app.json",
                         "inlineStyleLanguage": "scss",
                         "assets": [
-                            "src/favicon.ico",
                             "src/assets"
                         ],
                         "styles": [
                             "src/styles.scss",
                             "src/assets/fonts/font-connector.scss"
                         ],
-                        "scripts": []
+                        "scripts": [
+                            "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+                        ]
                     },
                     "configurations": {
                         "uk": {

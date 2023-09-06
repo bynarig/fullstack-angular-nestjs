@@ -2,7 +2,6 @@
   <configuration default="false" name="client-dev" type="js.build_tools.npm">
     <package-json value="$PROJECT_DIR$/client/package.json" />
     <command value="start" />
-    <arguments value="--localize" />
     <node-interpreter value="project" />
     <envs />
     <method v="2" />
