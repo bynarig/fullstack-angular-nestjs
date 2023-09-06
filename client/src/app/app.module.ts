@@ -5,6 +5,9 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
 import { HttpClientModule } from "@angular/common/http";
+import { FooterComponent } from "./basic/footer/footer.component";
+import { RegistrationComponent } from './user/registration/registration.component';
+import { AuthorizationComponent } from './user/authorization/authorization.component';
 
 // Import other necessary modules
 
@@ -12,13 +15,16 @@ import { HttpClientModule } from "@angular/common/http";
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        RegistrationComponent,
+        AuthorizationComponent
     ],
     imports: [
         BrowserModule,
         AppRoutingModule,
         NgbModule,
-        HttpClientModule
+        HttpClientModule,
+        FooterComponent
     ],
     providers: [],
     bootstrap: [AppComponent]
