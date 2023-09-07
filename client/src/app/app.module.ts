@@ -8,6 +8,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { FooterComponent } from "./basic/footer/footer.component";
 import { RegistrationComponent } from './user/registration/registration.component';
 import { AuthorizationComponent } from './user/authorization/authorization.component';
+import { NotFoundComponent } from './basic/not-found/not-found.component';
 
 // Import other necessary modules
 
@@ -17,7 +18,8 @@ import { AuthorizationComponent } from './user/authorization/authorization.compo
     declarations: [
         AppComponent,
         RegistrationComponent,
-        AuthorizationComponent
+        AuthorizationComponent,
+        NotFoundComponent
     ],
     imports: [
         BrowserModule,
