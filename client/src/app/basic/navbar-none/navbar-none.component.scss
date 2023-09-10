@@ -1,0 +1,17 @@
+.main {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    height: 12vh; // This makes the container take up the entire viewport height.
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // Vertically center content.
+    align-items: center; // Horizontally center content.
+    color: rgba(255, 255, 255, 0.8);
+}
+
+@media (min-width: 768px) {
+    .main {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+}

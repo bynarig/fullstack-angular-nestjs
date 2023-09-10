@@ -10,6 +10,8 @@ import {RegistrationComponent} from './user/registration/registration.component'
 import {AuthorizationComponent} from './user/authorization/authorization.component';
 import {NotFoundComponent} from './basic/not-found/not-found.component';
 import {NgOptimizedImage} from "@angular/common";
+import {NavbarNoneComponent} from "./basic/navbar-none/navbar-none.component";
+import {FormsModule} from "@angular/forms";
 
 // Import other necessary modules
 
@@ -28,7 +30,9 @@ import {NgOptimizedImage} from "@angular/common";
         NgbModule,
         HttpClientModule,
         FooterComponent,
-        NgOptimizedImage
+        NgOptimizedImage,
+        NavbarNoneComponent,
+        FormsModule
     ],
     providers: [],
     bootstrap: [AppComponent]

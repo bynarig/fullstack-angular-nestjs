@@ -1,1 +1,30 @@
-<p>authorization works!</p>
+<app-navbar-none></app-navbar-none>
+<div class="container main">
+    <h4>
+        Sign In
+    </h4>
+    <form>
+        <input aria-describedby="emailHelp" class="form-control input-field" id="exampleInputEmail1"
+               placeholder="Email or phone"
+               type="email">
+        <input class="form-control input-field" id="exampleInputPassword1" placeholder="Password" type="password">
+        <div class="mb-3 form-check">
+            <input [(ngModel)]="isChecked" class="form-check-input" id="exampleCheck1" type="checkbox">
+            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+        </div>
+        <button class="btn btn-primary" type="submit">Submit</button>
+    </form>
+    <p>or continue with:</p>
+    <div class="d-flex justify-content-center">
+        <a>
+            <img alt="" height="37" ngSrc="assets/images/google-logo-white.svg" width="36">
+        </a>
+        <a>
+            <img alt="" height="37" ngSrc="assets/images/apple-logo-white.svg" width="36">
+        </a>
+    </div>
+
+    <a href="/">Create an account</a>
+    <a href="/">Forgot password?</a>
+</div>
+<!--<app-footer></app-footer>-->
