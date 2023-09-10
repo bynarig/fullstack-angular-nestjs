@@ -1,0 +1,118 @@
+/* Customize the navbar */
+
+
+.container {
+    display: block;
+    width: 100%;
+}
+
+nav {
+    font-family: var(--nunito-font);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}
+
+.navbar-brand {
+    font-weight: bold; /* Make the logo text bold */
+}
+
+.input-group {
+    height: 45px;
+    max-width: 369px;
+    border-bottom-left-radius: 40px !important;
+}
+
+input.form-control, button.btn.btn-primary {
+    border-radius: 40px;
+}
+
+
+.input-container, .input-container:focus, .input-container:active {
+    background-color: white;
+    margin: 0 auto;
+    border: 0;
+    outline: none !important;
+}
+
+.btn-primary, .btn-primary:active {
+    border: none;
+    background-color: white;
+}
+
+/* Add this to your SCSS file */
+.navbar-toggler:focus, .navbar-toggler {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+
+
+.navbar-toggler-icon {
+    color: white;
+    background-image: url("../../../assets/images/burger.svg");
+    font-size: 30px;
+    //background-color: #333; /* Change the hamburger icon color */
+}
+
+.nav-item {
+    margin-right: 15px; /* Adjust the spacing between menu items */
+}
+
+.navbar-toggler-icon {
+    color: white;
+    background-image: url("../../../assets/images/burger.svg");
+    font-size: 25px;
+    //background-color: #333; /* Change the hamburger icon color */
+}
+
+.burger-menu {
+    margin-top: 10px;
+}
+
+.desktop-additional-buttons {
+    margin-top: 10px;
+
+    &.profile-button {
+        margin-left: 10px;
+    }
+}
+
+/* Remove decorations from input when focused */
+.input-group input.form-control:focus, input.form-control {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+
+
+.profile-button {
+    margin-left: 20px;
+}
+
+/* Customize link color */
+a {
+    color: white;
+}
+
+@media (min-width: 768px) {
+    .navbar-toggler {
+        display: none;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand-img {
+        margin-top: 5px;
+        width: 64px;
+        height: 64px;
+    }
+    .navbar {
+        border: none;
+    }
+    .desktop-additional-buttons {
+        display: none;
+    }
+
+}

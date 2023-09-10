@@ -1,12 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 
 /* Importing Bootstrap SCSS file. */
-
 @import 'bootstrap/scss/bootstrap';
 @import "bootstrap-icons/font/bootstrap-icons.css";
+@import "variables";
 
 
 body {
+    a p button h1 h2 h3 h4 h5 h6 {
+        font-family: var(--nunito-font);
+    }
+
     color: white;
     text-decoration: none;
     background-color: rgba(41, 43, 46, 1);

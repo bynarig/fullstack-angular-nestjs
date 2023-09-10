@@ -1,7 +1,7 @@
 # FullStack project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1
-and [NestJs](https://nestjs.com/) version 10.2.2 based on Node.js 18.17.1 LTS.
+and [NestJs](https://nestjs.com/) version 10.2.2 based on Node.js 20.6.1.
 
 ## Install NVM
 
@@ -30,8 +30,8 @@ curl https://raw.githubusercontent.com/creationix/nvm/master/install.sh | bash
 ## Installing Node.js
 
 ```Bash
-nvm install 18.17.1
-nvm use 18.17.1
+nvm install 20.6.1
+nvm use 20.6.1
 ```
 
 ## Installing dependencies

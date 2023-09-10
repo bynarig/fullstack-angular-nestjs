@@ -1,14 +1,15 @@
-import { NgModule } from "@angular/core";
-import { BrowserModule } from "@angular/platform-browser";
+import {NgModule} from "@angular/core";
+import {BrowserModule} from "@angular/platform-browser";
 
-import { AppRoutingModule } from "./app-routing.module";
-import { AppComponent } from "./app.component";
-import { NgbModule } from "@ng-bootstrap/ng-bootstrap";
-import { HttpClientModule } from "@angular/common/http";
-import { FooterComponent } from "./basic/footer/footer.component";
-import { RegistrationComponent } from './user/registration/registration.component';
-import { AuthorizationComponent } from './user/authorization/authorization.component';
-import { NotFoundComponent } from './basic/not-found/not-found.component';
+import {AppRoutingModule} from "./app-routing.module";
+import {AppComponent} from "./app.component";
+import {NgbModule} from "@ng-bootstrap/ng-bootstrap";
+import {HttpClientModule} from "@angular/common/http";
+import {FooterComponent} from "./basic/footer/footer.component";
+import {RegistrationComponent} from './user/registration/registration.component';
+import {AuthorizationComponent} from './user/authorization/authorization.component';
+import {NotFoundComponent} from './basic/not-found/not-found.component';
+import {NgOptimizedImage} from "@angular/common";
 
 // Import other necessary modules
 
@@ -26,7 +27,8 @@ import { NotFoundComponent } from './basic/not-found/not-found.component';
         AppRoutingModule,
         NgbModule,
         HttpClientModule,
-        FooterComponent
+        FooterComponent,
+        NgOptimizedImage
     ],
     providers: [],
     bootstrap: [AppComponent]

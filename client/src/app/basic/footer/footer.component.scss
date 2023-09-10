@@ -1,9 +1,8 @@
 //footer BG
-$footer-bg: rgba(19, 22, 32, 1);
-$nunito-font: Nunito-Regular, serif;
+//$accent-dark-black: rgba(19, 22, 32, 1);
 
 footer {
-    background-color: $footer-bg;
+    background-color: var(--accent-dark-blue);
 }
 
 div {
@@ -18,11 +17,11 @@ a {
     all: unset;
     cursor: pointer;
     opacity: 0.75;
-    font-family: $nunito-font;
+    font-family: var(--nunito-font);
 }
 
 p {
-    font-family: $nunito-font;
+    font-family: var(--nunito-font);
 }
 
 .get-on-img {
@@ -76,7 +75,7 @@ p {
 
 .btn {
     &:active {
-        background-color: $footer-bg;
+        background-color: var(--accent-dark-blue);
     }
 
     border-radius: 13px;
@@ -84,8 +83,8 @@ p {
     width: 180px;
     height: 60px;
     font-size: 20px;
-    font-family: $nunito-font;
-    background-color: $footer-bg;
+    font-family: var(--nunito-font);
+    background-color: var(--accent-dark-blue);
 
 
 }
@@ -97,6 +96,6 @@ p {
 .dropdown-menu {
     border-radius: 10px;
     color: white;
-    background-color: $footer-bg;
+    background-color: var(--accent-dark-blue);
     border-color: rgba(166, 166, 166, 1);
 }

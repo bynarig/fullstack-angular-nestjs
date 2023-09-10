@@ -1,0 +1,19 @@
+.main {
+    height: 70vh; // This makes the container take up the entire viewport height.
+    display: flex;
+    flex-direction: column;
+    justify-content: center; // Vertically center content.
+    align-items: center; // Horizontally center content.
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.btn, .btn:active, .btn:focus {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: var(--accent-gray);
+    border-color: rgba(255, 255, 255, 0.8);
+    outline: none !important;
+}
+
+a p button h1 h2 h3 h4 h5 h6 {
+    font-family: Nunito-Regular, serif !important;
+}
