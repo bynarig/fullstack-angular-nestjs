@@ -7,7 +7,8 @@
         "start": "ng serve",
         "build": "ng build",
         "watch": "ng build --watch --configuration development",
-        "test": "ng test"
+        "test": "ng test",
+        "deploy": "firebase deploy --project fifth-being-396505\n"
     },
     "private": true,
     "dependencies": {
